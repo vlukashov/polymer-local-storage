@@ -1,6 +1,6 @@
 # Polymer Local Storage demo app
 
-This app demoes an issue with the [WebComponents polyfill](https://github.com/webcomponents/webcomponentsjs/) introduced in the version 1.0.8. The issue causes the app to fail in IE11. Most likely, the root cause is closure-compiler/#2640, but for some reason the issue did not surface with the polyfill versions 1.0.7 and before.
+This app demoes an issue with the [WebComponents polyfill](https://github.com/webcomponents/webcomponentsjs/) introduced in the version 1.0.8. The issue causes the app to fail in IE11. Most likely, the root cause is [closure-compiler/#2640](https://github.com/google/closure-compiler/issues/2640), but for some reason the issue did not surface with the polyfill versions 1.0.7 and before.
 
 ## Run the demo locally
 
