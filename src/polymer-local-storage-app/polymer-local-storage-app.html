@@ -1,0 +1,32 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/app-storage/app-localstorage/app-localstorage-document.html">
+
+<dom-module id="polymer-local-storage-app">
+  <template>
+    <app-localstorage-document key="[[key]]" data="{{items}}"></app-localstorage-document>
+    <label>Enter a key: <input type="text" value="{{key::change}}"></label>
+    <p>Local Storage contains [[items.length]] item(s) for the key '[[key]]'</p>
+  </template>
+  <script>
+  class PolymerLocalStorageApp extends Polymer.Element {
+    static get is() {
+      return 'polymer-local-storage-app';
+    }
+
+    static get properties() {
+      return {
+        key: {
+          type: String,
+          valur: ''
+        },
+        items: {
+          type: Array,
+          value: () => []
+        }
+      };
+    }
+  }
+
+  window.customElements.define(PolymerLocalStorageApp.is, PolymerLocalStorageApp);
+  </script>
+</dom-module>

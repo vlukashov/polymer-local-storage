@@ -1,0 +1,13 @@
+{
+  "name": "polymer-local-storage",
+  "version": "1.0.0",
+  "main": "index.html",
+  "license": "MIT",
+  "dependencies": {
+    "polymer-cli": "^1.5.4"
+  },
+  "scripts": {
+    "build": "polymer build",
+    "start": "polymer serve"
+  }
+}
